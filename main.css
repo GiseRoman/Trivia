@@ -1,0 +1,70 @@
+@import url(./buttons.css);
+@import url(./titles.css);
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+:root{
+    --peachColor: #f8dac2;
+    --salmonColor: #f2a297;
+    --hotPink: #f4436f;
+    --redRed: #ca1444;
+    --darkGrey: #142738;
+  
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(45deg, hsla(27, 79%, 87%, 1) 20%, hsla(345, 89%, 61%, 1) 100%);;
+  background-image: url(./images/luna.jpg);
+  background-size: 100% 100% ;
+  background-repeat: no-repeat;
+}
+
+.escondidos{
+  display: none;
+}
+
+.cajas{
+  border: 1px solid var(--salmonColor);
+  border-radius: 6px;
+  padding: 10px 10px;
+  min-height: 50px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(45deg, hsla(27, 79%, 87%, 1) 20%, hsla(345, 89%, 61%, 1) 100%);;
+  /*background: var(--peachColor);*/
+  opacity: 0.9;
+  text-align: center;
+}
+
+
+.tarjetas{
+  border-radius: 15px;
+  border: 4px solid var(--darkGrey);
+  border-spacing: 15px;
+}
+
+
+.right{
+  background-color: MediumSpringGreen;
+  color: black;
+  padding: 5px 10px;
+  font-size: 15px;
+  border-radius: 3px;
+}
+ .wrong{
+   background-color: darkgrey;
+   color: black;
+   padding: 5px 10px;
+   font-size: 15px;
+   border-radius: 3px;
+ }
+
+.divide{
+  margin-top: 40px;
+  border-top: 1px dashed var(--hotPink);
+  padding-top: 20px;
+}
