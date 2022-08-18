@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>Trivia</title>
+  <link href="main.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="./main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Fugaz+One&family=Montserrat&family=Patua+One&family=Poppins&family=Righteous&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <h1 class="mainTitle">Trivia Mundial</h1>
+
+  <p></p>
+
+  <div id="nameRequest" class="cajas">
+    <form class name="form1" method="post">
+      <p class="subtitulos">Bienvenida</p>
+      <input type="text" id="miName" name="name" placeholder="Escribe tu nombre" class="inputButton" size="30">
+      <br>
+      <p></p>
+      <input class="buttonStyle" type="button" name="submit" value="Enviar" onclick="usuarioNombre()">
+      </br>
+    </form>
+  </div>
+
+  <div id="saludo" class="cajas escondidos">
+    <p id="mensajeSaludo" class=helloName></p>
+    <p id="subtitulos">Selecciona una categoría para jugar</p>
+    <p></p>
+    <p>
+      <button class="buttonStyle" onclick="abrirPreguntas('categoria1')">Conocimiento General</button>
+      <button class="buttonStyle" onclick="abrirPreguntas('categoria2')">Series de TV</button>
+    </p>
+    <button id="comenzar" class="buttonStyle cajas escondidos">Comenzar</button>
+  </div>
+
+  <div class="escondidos cajas" id="tarjetas">
+
+    <p id="nombreCategoria"></p>
+    <div class="questions">
+      <p id="aparezcanP" class="subtitulos"></p>
+      <p>
+      <div id="incisos"></div>
+      </p>
+    </div>
+    <p>
+    <div id=almostAnswer class="escondidos"></div>
+
+    </p>
+    <p>
+      <button class="buttonStyle" onclick="next()">Siguiente</button>
+    </p>
+  </div>
+
+  <div id="totales" class="cajas escondidos">
+    <p class="subtitulos">Aquí tienes un resumen:</p>
+    <div id=muestrameTodo>
+
+    </div>
+    <p>
+
+    </p>
+    <p>
+      <button class="buttonStyle" onclick="reload()"> Volver a jugar </button>
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
