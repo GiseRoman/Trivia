@@ -1,6 +1,6 @@
 # GiseRoman.github.io
 Laboratoria preadmision Trivia
-Página creada en HTML.
+Página creada en HTML y JavaScript.
  Una trivia sencilla que permite al usuario:
  1- Ingresar su nombre y recibir una bienvenida a la página.
  2- Elegir entre dos temáticas distintas para la trivia.
